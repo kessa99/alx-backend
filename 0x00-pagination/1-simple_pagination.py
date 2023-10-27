@@ -40,7 +40,7 @@ class Server:
     @staticmethod
     def index_range(page, page_size):
         """
-        donc
+        returns a tuple conataining start ans end of index
         """
         start_index = (page - 1) * page_size
         end_index = start_index + page_size
