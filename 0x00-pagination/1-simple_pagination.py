@@ -41,6 +41,13 @@ class Server:
     def index_range(page, page_size):
         """
         returns a tuple conataining start ans end of index
+        Args:
+            page (int, optional): the page numbet to retrieve.
+            page_size (int, optional): the number of items per page
+        Returns:
+            List[List]: A List of Lists containing the data for the specfified page
+        Raises:
+            AssertionsError: If page or page_size are not positive integers
         """
         start_index = (page - 1) * page_size
         end_index = start_index + page_size
