@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import csv
 import math
-from typing import List
+from typing import List, Tuple
 
 
 class Server:
@@ -30,13 +30,14 @@ class Server:
         assert isinstance(page_size, int) and page_size > 0
 
         size_of_csv = len(self.dataset())
-        start, end = index_range(page, page_size)
+        start, end = self.index_range(page, page_size)
         end = min(end, size_of_csv)
 
         if start >= size_of_csv:
             return []
         return self.dataset()[start:end]
 
+    @staticmethod
     def index_range(page, page_size):
         """
         donc
