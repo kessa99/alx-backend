@@ -45,7 +45,8 @@ class Server:
             page (int, optional): the page numbet to retrieve.
             page_size (int, optional): the number of items per page
         Returns:
-            List[List]: A List of Lists containing the data for the specfified page
+            List[List]: A List of Lists containing
+            the data for the specfified page
         Raises:
             AssertionsError: If page or page_size are not positive integers
         """
