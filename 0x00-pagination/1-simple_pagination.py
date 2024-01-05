@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
+"""
+Pagination for returns head of list
+"""
 import csv
 import math
 from typing import List, Tuple
 
 
 class Server:
-    """Server class to paginate a database of popular baby names.
+    """
+    Server class to paginate a database of popular baby names.
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
@@ -25,6 +29,9 @@ class Server:
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
         find the index pagination
+        Args:
+            page(int): the current page number
+            page_size(int): the number of items per page
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
