@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+firsttask: create simple setup basic flask
+"""
 
 from flask import Flask, render_template
 
