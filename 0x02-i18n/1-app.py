@@ -8,8 +8,6 @@ from flask_babel import Babel
 
 
 app = Flask(__name__)
-
-# instantiation of Babel object for flask application
 babel = Babel(app)
 
 
@@ -22,11 +20,10 @@ class Config(object):
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
-# use the config
 app.config.from_object(Config)
 
 
-@app.router('/')
+@app.route('/')
 def home():
     """
     function for babel flask
