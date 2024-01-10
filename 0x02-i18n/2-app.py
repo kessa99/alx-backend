@@ -23,7 +23,7 @@ class Config(object):
 app.config.from_object(config)
 
 
-@babel.localselectore
+@babel.localeselector
 def get_locale():
     """
     determine the best match
