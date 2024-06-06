@@ -102,3 +102,15 @@ Pour compiler et utiliser Redis après avoir résolu les erreurs ci-dessus, suiv
     ```
 
 En suivant ces étapes, vous devriez être en mesure de compiler et d'utiliser Redis correctement. Si vous rencontrez d'autres problèmes, n'hésitez pas à le signaler.
+
+
+
+
+
+
+
+// {
+//   "dependencies": {
+//     "redis": "^4.6.14"
+//   }
+// }
